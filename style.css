@@ -77,7 +77,7 @@ nav .btn {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1350&q=80'); /* Placeholder Tools Image */
+    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)); /* Placeholder Tools Image */
     background-size: cover;
     background-position: center;
     height: 80vh;
