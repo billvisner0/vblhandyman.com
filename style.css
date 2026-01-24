@@ -23,13 +23,13 @@ a { text-decoration: none; color: inherit; }
 
 /* Header */
 header {
-    background: #0a192f; /* Deep Navy */
+    background: #000000; /* Pure Black */
     color: #fff;
-    padding: 1rem 0;
+    padding: 0.5rem 0; /* Slightly reduced padding to fit image better */
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Subtle white glow for contrast */
 }
 
 header .container {
@@ -38,14 +38,17 @@ header .container {
     align-items: center;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+/* Logo Image Styling */
+.logo-link {
+    display: flex;
+    align-items: center;
 }
 
-.logo span { color: #d4af37; /* Gold */ }
+.logo-img {
+    height: 60px; /* Adjusts height automatically */
+    width: auto;  /* Keeps aspect ratio */
+    display: block;
+}
 
 nav ul {
     display: flex;
@@ -65,10 +68,11 @@ nav ul li a:hover { color: #fff; }
 
 nav .btn {
     background: #d4af37;
-    color: #0a192f;
+    color: #000000; /* Changed text to black for better contrast on gold */
     padding: 8px 16px;
     border-radius: 4px;
     font-weight: bold;
+}
 }
 
 /* Hero Section */
