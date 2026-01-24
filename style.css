@@ -23,13 +23,13 @@ a { text-decoration: none; color: inherit; }
 
 /* Header */
 header {
-    background: #000000; /* Pure Black */
+    background: #0a192f; /* Deep Navy */
     color: #fff;
-    padding: 0.5rem 0; /* Slightly reduced padding to fit image better */
+    padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Subtle white glow for contrast */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 header .container {
@@ -38,17 +38,14 @@ header .container {
     align-items: center;
 }
 
-/* Logo Image Styling */
-.logo-link {
-    display: flex;
-    align-items: center;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.logo-img {
-    height: 60px; /* Adjusts height automatically */
-    width: auto;  /* Keeps aspect ratio */
-    display: block;
-}
+.logo span { color: #d4af37; /* Gold */ }
 
 nav ul {
     display: flex;
@@ -68,16 +65,15 @@ nav ul li a:hover { color: #fff; }
 
 nav .btn {
     background: #d4af37;
-    color: #000000; /* Changed text to black for better contrast on gold */
+    color: #0a192f;
     padding: 8px 16px;
     border-radius: 4px;
     font-weight: bold;
 }
-}
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)); /* Placeholder Tools Image */
+    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1350&q=80'); /* Placeholder Tools Image */
     background-size: cover;
     background-position: center;
     height: 80vh;
