@@ -88,7 +88,8 @@ nav .btn {
 .hero {
     background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('hero.png');
     background-size: cover;
-    background-position: center top; 
+    /* Adjusted to 25% to show logos on shirts while keeping heads visible */
+    background-position: center 25%; 
     height: 80vh;
     display: flex;
     align-items: center;
