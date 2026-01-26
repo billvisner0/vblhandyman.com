@@ -86,15 +86,40 @@ nav .btn {
 }
 
 .hero {
-    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('hero.png');
-    background-size: cover;
-    background-position: center;
+    position: relative;
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* Change to 'center top' if heads are cut off */
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8));
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
 }
 
 .hero h1 {
