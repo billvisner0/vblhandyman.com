@@ -25,9 +25,8 @@ header {
 }
 
 .logo-img {
-    height: 120px; 
+    height: 220px; 
     width: auto;
-    max-width: 100%;
     display: block;
     filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -80,6 +79,6 @@ p {
         padding: 20px;
     }
     .logo-img {
-        height: 70px;
+        height: 100px;
     }
 }
