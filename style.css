@@ -86,7 +86,7 @@ nav .btn {
 }
 
 .hero {
-    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://cdn.prod.website-files.com/6390e14cc734a931f8327343/679c741cfd2f81997c15fb20_Featured-image.jpg?auto=format&fit=crop&w=1350&q=80');
+    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('hero.png');
     background-size: cover;
     background-position: center;
     height: 80vh;
