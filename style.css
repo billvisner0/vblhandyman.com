@@ -9,24 +9,32 @@ body {
     background: linear-gradient(160deg, #2c343b 0%, #2c343b 45%, #3d4a57 45%, #3d4a57 47%, #2c343b 47%, #2c343b 100%);
     background-size: cover;
     background-attachment: fixed;
-    
-    height: 100vh;
+    min-height: 100vh;
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    overflow: hidden; 
 }
 
 header {
     padding: 30px 50px;
 }
 
-.logo {
-    font-size: 0.85rem;
-    font-weight: 300;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    opacity: 0.6;
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 80px; 
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-link:hover .logo-img {
+    opacity: 0.9;
+    transform: scale(1.02);
 }
 
 main {
@@ -34,7 +42,9 @@ main {
     display: flex;
     justify-content: center; 
     align-items: flex-start; 
-    padding-top: 15vh; 
+    padding-top: 15vh;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .content-box {
@@ -47,6 +57,7 @@ h1 {
     font-weight: 400;
     margin-bottom: 15px;
     letter-spacing: -0.5px;
+    color: #ffffff;
 }
 
 p {
@@ -61,4 +72,13 @@ p {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px;
+    }
+    .logo-img {
+        height: 60px;
+    }
 }
